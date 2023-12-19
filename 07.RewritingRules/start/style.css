@@ -1,0 +1,17 @@
+:root {
+    --favouriteBackColour: rgb(255, 181, 181);
+    --myBallsAreThisColour: rgb(12, 12, 87);
+    --unnecessaryTextColour: white;
+}
+
+body {
+    background-color: var(--favouriteBackColour);
+    color: var(--unnecessaryTextColour);
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: var(--myBallsAreThisColour);
+    border-radius: 50px;
+}
