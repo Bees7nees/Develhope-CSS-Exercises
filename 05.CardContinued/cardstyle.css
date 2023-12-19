@@ -1,0 +1,17 @@
+table {
+    width: min-content;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+td {
+    border: solid 2px grey;
+    padding: 10px;
+
+}
+
+.cardImage {
+    width: 200px;
+    margin: -10px;
+}

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}  
+
+a {
+    color: azure;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    float: inline-start;
+}
+
+.linkLogo {
+    font-size: large;
+    font-weight: 500;
+}
+
+.randomlink {
+    color: grey;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbutton {
+    font-size: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 15px;
+
+}
+
+/*No supe hacer la flecha que se invierte al
+abrir el dropdown menu. Te preguntaré en clase si no te importa!*/
+
+.droplist {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.droplist a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .droplist {
+    display: block;
+}
+
+.Navbar a:hover, .dropbutton:hover, .droplist a:hover {
+    background-color: #ddd;
+  }
+
+.search-container {
+    float: right;
+    margin: 10px;
+}
+
+input[type=text] {
+    font-size: inherit;
+    font-weight: 200;
+    font-family: inherit;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.searchbutton {
+    color: rgb(0, 176, 0);
+    background-color: #333;
+    border: 1px solid rgb(0, 176, 0);
+    border-radius: 5px;
+    font-size: inherit;
+    font-weight: 200;
+    font-family: inherit;
+    padding: 10px;
+}
+
+.searchbutton:hover {
+    background-color: rgb(0, 176, 0);
+    color: white;
+}
