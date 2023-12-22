@@ -2,6 +2,9 @@
     --favouriteBackColour: rgb(255, 181, 181);
     --myBallsAreThisColour: rgb(12, 12, 87);
     --unnecessaryTextColour: white;
+    --standardwidth: 100px;
+    --standardheight: 100px;
+    --standardradius: 50px;
 }
 
 body {
@@ -10,8 +13,8 @@ body {
 }
 
 .ball {
-    width: 100px;
-    height: 100px;
+    width: var(--standardwidth);
+    height: var(--standardheight);
     background-color: var(--myBallsAreThisColour);
-    border-radius: 50px;
+    border-radius: var(--standardradius);
 }

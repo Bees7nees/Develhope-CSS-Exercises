@@ -1,17 +1,25 @@
-table {
-    width: min-content;
+.card {
+    width: 300px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    border-spacing: 0px;
+    border: 1.5px solid lightgray;
 }
 
-td {
-    border: solid 2px grey;
+.description {
     padding: 10px;
-
+    border-bottom: 1.5px solid lightgray;
 }
 
-.cardImage {
-    width: 200px;
-    margin: -10px;
+.item {
+    padding: 10px;
+    border-bottom: 1.5px solid lightgray;
+}
+
+.links {
+    padding: 10px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
