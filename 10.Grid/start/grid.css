@@ -1,5 +1,5 @@
 body {
-    font-weight: 500;
+    font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +13,10 @@ div {
 
 .calculator {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
+    width: 240px;
+    grid-template-columns: 60px 60px 60px 60px;
+    box-shadow: 0 0 3px gray;
+    border-radius: 5px;
 }
 
 #result {
@@ -34,4 +37,40 @@ div {
     grid-row-end: 7;
     justify-content: center;
     background-color: rgb(255, 107, 105);
+    border-bottom-right-radius: 5px;
 }
+
+#result {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#pad0 {
+    border-bottom-left-radius: 5px;
+}
+
+/*
+Por qué el border-radius tiene que aplicarse
+a las celdas de cada esquina de la grid, y
+no funciona si lo aplico al div .calculator para
+aplicarlo a toda la grid?
+*/
+
+/*Borders inside grid*/
+
+#pad1, #pad2, #pad3, #pad4, #pad5, 
+#pad6, #pad7, #pad8, #pad9, #sum, 
+#sub, #mult, #divide {
+    border-bottom: 2px solid gray;
+}
+
+#pad1, #pad2, #pad3, #pad4, #pad5, 
+#pad6, #pad7, #pad8, #pad9, #sum, 
+#sub, #mult, #pad0, #coma, #allclear {
+    border-right: 2px solid gray;
+}
+
+/*
+Alguna manera de añadir los borders dentro de
+el grid sin tener que hacerlo manualmente?
+*/
