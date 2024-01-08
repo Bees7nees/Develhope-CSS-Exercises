@@ -1,0 +1,37 @@
+body {
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+}
+
+#result {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: end;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+#sum, #sub, #mult, #divide {
+    background-color: rgb(215, 223, 238);
+}
+
+#equal {
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    justify-content: center;
+    background-color: rgb(255, 107, 105);
+}
