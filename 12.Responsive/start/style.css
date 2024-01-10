@@ -7,10 +7,20 @@ body {
 
 .Sidebar {
     grid-area: sidebar;
+    background-color: #edefff;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 article {
     grid-area: article;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 img {
@@ -19,12 +29,18 @@ img {
 
 footer {
     grid-area: footer;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 main {
-    margin-left: 100px;
-    margin-right: 100px;
     display: grid;
+    grid: 
+    'article article sidebar'
+    'image image sidebar'
+    'footer footer footer';
 }
 
 nav {
@@ -37,7 +53,7 @@ nav {
 
 .NavLinks {
     margin-left: 50px;
-    width: 10%;
+    width: 200px;
     display: flex;
     justify-content: space-between;
 }
@@ -57,3 +73,57 @@ a:hover::after {
     transition-duration: 3s;
 }
 
+.SidebarImage {
+    width: 100%;
+}
+
+.ArticleImage {
+    min-height: 300px;
+}
+
+footer {
+    display: flex;
+    height: 50px;
+    background-color: #012345;
+    align-items: center;
+    justify-content: end;
+    color: white;
+}
+
+form {
+    padding-right: 50px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    background-color: #ff784d;
+    color: white;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color:#ff784d;
+    transition-duration: 0.4s;
+}
+
+@media (max-width: 990px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .NavLinks {
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-around;
+    }
+
+    .Sidebar {
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+}
