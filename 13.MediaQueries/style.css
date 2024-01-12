@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.Kitties {
+    display: flex;
+    justify-content: space-around;
+}
+
+.CatCard {
+    box-sizing: border-box;
+    width: 350px;
+    background-color: rgb(146, 141, 135);
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+}
+
+.CardInfoNav {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+#CatSeal {
+    width: 40px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.MoreOptions {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
+
+#Ellipsis {
+    width: 40px;
+}
+
+.CatPersonal {
+    margin: 0;
+    line-height: 1.2;
+    color: azure;
+    margin-left: 10%;
+}
+
+#CatPersonalBox {
+    width: 50%;
+}
+
+.CatPersonal::first-line {
+    color: black;
+    font-size: larger;
+}
+
+.CatDetails {
+    display: flex;
+    align-items: center;
+}
+
+.CardImage {
+    width: 100%;
+    height: 90px;
+}
+
+.LikeComment {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#LikeButton, #CommentButton {
+    width: 30px;
+    margin-left: 5%;
+}
+
+.CatStory {
+    margin-top: 0;
+    padding: 3%;
+    text-align: justify;
+    font-weight: 100;
+}
