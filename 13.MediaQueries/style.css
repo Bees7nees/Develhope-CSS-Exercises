@@ -66,9 +66,12 @@ img {
     align-items: center;
 }
 
+.CardImageContainer {
+    width: 200px;
+    height: 200px;
+}
+
 .CardImage {
-    width: 100%;
-    height: 90px;
 }
 
 .LikeComment {
