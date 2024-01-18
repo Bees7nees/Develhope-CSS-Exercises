@@ -7,33 +7,39 @@
     <link rel="stylesheet" href="navStyle.css">
 </head>
 <body>
-    <ul class="NavigationBar">
-        <li class=""><a href="">Navbar</a></li>
-        <li><a href="">Home</a></li>
-        <li><a href="">Link</a></li>
-        <li class="dropdown">
-          <a href="" class="dropbtn">Dropdown</a>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </li>
-        <li><a href="">Disabled</a></li>
-        <form class="SearchBar">
-            <input 
-                type="text" 
-                placeholder="Search" 
-                name="search"
-                class="SearchInput"
-            >
-            <button 
-                type="submit" 
-                class="SearchButton"
-            >
-            Search
-            </button>
-        </form>
-    </ul>
+    <nav class="Navbar">
+        <a id="SiteTitle" href="">Navbar</a>
+        <a id="LinkHome" href="">Home</a>
+        <a id="LinkStandard" href="">Link</a>
+        <div class="DropdownMenu">
+            <div class="DropdownButton">
+                <a id="DropdownLink" href="">
+                    Dropdown
+                    <img 
+                        src="Assets/arrowhead-up-svgrepo-com.svg" 
+                        alt=""
+                        class="DropdownArrow"
+                    >
+                </a>
+            </div>
+            <div class="DropdownContent">
+                <a id="DropdownItem" href="">A link</a>
+                <a id="DropdownItem" href="">Another link</a>
+                <a id="DropdownItem" href="">Yet ANOTHER link</a>
+            </div>
+        </div>
+        <a id="LinkDisabled" href="">Disabled</a>
+        <div class="SearchBar">
+            <form action="">
+                <input 
+                    type="text" 
+                    placeholder="Search" 
+                    name="search"
+                    class="SearchInput"
+                >
+                <button class="SearchButton">Search</button>
+            </form>
+        </div>
+    </nav>
 </body>
 </html>
