@@ -8,37 +8,48 @@
 </head>
 <body>
     <nav class="Navbar">
-        <a id="SiteTitle" href="">Navbar</a>
-        <a id="LinkHome" href="">Home</a>
-        <a id="LinkStandard" href="">Link</a>
-        <div class="DropdownMenu">
-            <div class="DropdownButton">
-                <a id="DropdownLink" href="">
-                    Dropdown
-                    <img 
-                        src="Assets/arrowhead-up-svgrepo-com.svg" 
-                        alt=""
-                        class="DropdownArrow"
-                    >
-                </a>
+        <div class="HamburgerMenu">
+            <button class="HamburgerButton">
+                <img 
+                    src="Assets/menu-svgrepo-com.svg" 
+                    alt="Menu" 
+                    title="Menu"
+                    id="HamburgerIcon">
+            </button>
+            <div class="HamburgerContent">
+                <a id="SiteTitle" href="">Navbar</a>
+                <a id="LinkHome" href="">Home</a>
+                <a id="LinkStandard" href="">Link</a>
+                <div class="DropdownMenu">
+                    <div class="DropdownButton">
+                        <a id="DropdownLink" href="">
+                            Dropdown
+                            <img 
+                                src="Assets/arrowhead-up-svgrepo-com.svg" 
+                                alt=""
+                                class="DropdownArrow"
+                            >
+                        </a>
+                    </div>
+                    <div class="DropdownContent">
+                        <a id="DropdownItem" href="">A link</a>
+                        <a id="DropdownItem" href="">Another link</a>
+                        <a id="DropdownItem" href="">Yet ANOTHER link</a>
+                    </div>
+                </div>
+                <a id="LinkDisabled" href="">Disabled</a>
+                <div class="SearchBar">
+                    <form action="" class="SearchBarContent">
+                        <input 
+                            type="text" 
+                            placeholder="Search" 
+                            name="search"
+                            class="SearchInput"
+                        >
+                        <button class="SearchButton">Search</button>
+                    </form>
+                </div>
             </div>
-            <div class="DropdownContent">
-                <a id="DropdownItem" href="">A link</a>
-                <a id="DropdownItem" href="">Another link</a>
-                <a id="DropdownItem" href="">Yet ANOTHER link</a>
-            </div>
-        </div>
-        <a id="LinkDisabled" href="">Disabled</a>
-        <div class="SearchBar">
-            <form action="" class="SearchBarContent">
-                <input 
-                    type="text" 
-                    placeholder="Search" 
-                    name="search"
-                    class="SearchInput"
-                >
-                <button class="SearchButton">Search</button>
-            </form>
         </div>
     </nav>
 </body>
