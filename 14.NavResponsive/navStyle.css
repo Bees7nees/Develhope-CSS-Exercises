@@ -74,14 +74,21 @@ a {
     display: inline-block;
 }
 
+.SearchInput {
+    height: 100%;
+}
+
 .SearchButton {
-    padding: 5px 15px;
-    border: 10px;
-    border-radius: 5px;
-    border-color: green;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 4px;
     color: green;
     background-color: inherit;
+    font-weight: bold;
 }
+
+
 
 /* Hovers & other states */
 
@@ -92,6 +99,12 @@ a:hover {
 #LinkDisabled:hover {
     background-color: rgb(6, 52, 92);
     color: black;
+}
+
+.SearchButton:focus {
+    border: 1px solid rgb(6, 52, 92);
+    background-color: green;
+    color: rgb(6, 52, 92);
 }
 
 /* Animations */
