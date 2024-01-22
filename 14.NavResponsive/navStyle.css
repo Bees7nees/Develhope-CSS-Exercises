@@ -11,12 +11,14 @@ body {
     width: 100%;
     padding-right: 10px;
     background-color: rgb(6, 52, 92);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 a {
     height: 100%;
     padding: 15px;
-    display: inline-block;
     text-decoration: none;
     color: azure;
     font-size: small;
@@ -35,7 +37,6 @@ a {
 }
 
 .DropdownMenu {
-    width: fit-content;
     display: inline-block;
 }
 
@@ -46,17 +47,19 @@ a {
 #DropdownLink {
     display: flex;
     align-items: center;
-    column-gap: 5px;
+    gap: 5px;
 }
 
 .DropdownArrow {
-    height: 18px;
-    color: white;
+    width: 15px;
+    transition-duration: 0.4s;
+    transition-property: transform;
 }
 
 .DropdownContent {
     display: none;
     position: absolute;
+    width: 175px;
     background-color: #f9f9f9;
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -71,19 +74,26 @@ a {
 }
 
 .SearchBar {
-    display: inline-block;
+    margin-left: auto;
+}
+
+.SearchBarContent {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
 }
 
 .SearchInput {
-    height: 100%;
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: none;
 }
 
 .SearchButton {
-    height: 25px;
-    padding: 10px;
-    border: 1px solid green;
+    padding: 5px 8px;
+    border: 1px solid rgb(0, 212, 0);
     border-radius: 4px;
-    color: green;
+    color: rgb(0, 212, 0);
     background-color: inherit;
     font-weight: bold;
 }
@@ -93,7 +103,7 @@ a {
 /* Hovers & other states */
 
 a:hover {
-    background-color: rgb(223, 225, 79);
+    background-color: rgb(0, 212, 0);
 }
 
 #LinkDisabled:hover {
@@ -101,14 +111,65 @@ a:hover {
     color: black;
 }
 
+.SearchInput:focus {
+    border: 1px solid rgb(0, 212, 0);
+}
+
 .SearchButton:focus {
     border: 1px solid rgb(6, 52, 92);
-    background-color: green;
+    background-color: rgb(0, 212, 0);
     color: rgb(6, 52, 92);
 }
+
+.DropdownMenu:hover .DropdownArrow {
+    transform: rotate(180deg);
+}
+
+.DropdownMenu:hover .DropdownContent {
+    display: block;
+}
+
+.DropdownMenu:hover .DropdownContent a:hover {
+    background-color: aliceblue;
+    font-weight: bolder;
+}
+
+
 
 /* Animations */
 
 
-
 /* Media queries */
+
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+    a {
+        width: 100%;
+    }
+    .DropdownMenu {
+        width: 100%;
+    }
+    .DropdownButton{
+        width: inherit;
+    }
+    .DropdownLink {
+        width: inherit;
+    }
+    .DropdownMenu:hover .DropdownContent {
+        display: block;
+        width: 100%;
+    }
+    .SearchBar {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+    .SearchInput {
+        width: 80vw;
+    }
+}
